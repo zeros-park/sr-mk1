@@ -1,4 +1,5 @@
 우선 react로 어플리케이션 기본 골자를 만들어서 완료 하고, 그것들 토대로 nextjs로 재빌드 진행 예정
+gh-pages: https://zeros-park.github.io/sr-mk1/
 
 ------
 
