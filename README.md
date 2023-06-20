@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+## 우선 react로 어플리케이션 기본 골자를 만들어서 완료 하고
+그것들 토대로 nextjs로 재빌드한다.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## layout
+1. main : 전체 영역을 잡는다
+- 가로 크기에 따라 header 의 사이즈만큼의 padding top을 갖는다.
+- 가로 크기에 따라 aside 의 사이즈만큼의 padding left를 갖는다.
+2. header : main의 위를 덮도록 상단 구조한다.
+3. aside : main의 위를 덮도록 좌측 구조한다.
 
-## Available Scripts
+## 자꾸 자동 저장이 안되서 오류가 나오는게 거슬림
+## 구조를 만들고 styled-components를 써보려고 했는데, 프로젝트 관리를 이상하게 하는것 같음, npm install styled-components@latest 로 최신을 명시하지 않고 하면 설치가 안됨, 이런 맛보기만 하고 쓰면 안될것 같음, 나중엔 정상기능을 유지한 ABCD의 템플릿을 입해보는 작업도 해보려고 하는데, 이런 환경에선 안맞을듯, 그래도 경험은 해보자는 정도
+음... 먹이긴 했는데 대소문자를 못쓰는데... 이건 맞는지 재확인은 좀 해봐야 할듯
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 23.5.19
+blockItem을 추가함, 사이 간격은 어떻게 조정하면 좋을지 고민중, 다른 서비스를 까봐서 참고해보자.
+다른걸 보니, 새로와 가로의 간격을 어떻게 정렬하느냐에 따라 다르게 두고 있음을 확인함. 
+하여 list wrapper를 설정해야겟다는 생각이 듬. 그리고 그 list wrapper 에서 스크를 관련 것을 처리하면 좋겟다는 생각이 듬.
+aside 영역의 스크롤이 잘 안됨, aside의 상단 영역의 크기변경에 따라 하단 영역도 변경되면서 자연스럽게 스크롤 사이즈가 재처리가 되어야 하는데 그게 잘 안됨
