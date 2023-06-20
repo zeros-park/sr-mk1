@@ -8,7 +8,7 @@ const Layout = styled.div`
 
 const Item = styled.div`
     background-color: #e0fffa;
-    height: 60px;
+    height: 50px;
     padding: 5px 5px 5px 5px;
     border: 1px solid;
 `

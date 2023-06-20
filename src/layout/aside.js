@@ -25,15 +25,15 @@ const Aside = ({ layoutOptions }) => {
     return (
         <Section className="_aside" layout={layoutOptions}>  
             <YScrollWrapper marginTop={layoutOptions.headerHeightSize}>
-                <BlockItem text={'aside item 1'}/>
-                <BlockItem text={'aside item 2'}/>
-                <BlockItem text={'aside item 3'}/>
-                <BlockItem text={'aside item 4'}/>
-                <BlockItem text={'aside item 5'}/>
-                <BlockItem text={'aside item 6'}/>
-                <BlockItem text={'aside item 7'}/>
-                <BlockItem text={'aside item 8'}/>
-                <BlockItem text={'aside item 9'}/>
+                <BlockItem text={'ai 1'}/>
+                <BlockItem text={'ai 2'}/>
+                <BlockItem text={'ai 3'}/>
+                <BlockItem text={'ai 4'}/>
+                <BlockItem text={'ai 5'}/>
+                <BlockItem text={'ai 6'}/>
+                <BlockItem text={'ai 7'}/>
+                <BlockItem text={'ai 8'}/>
+                <BlockItem text={'ai 9'}/>
                 <div>end</div>    
             </YScrollWrapper>
         </Section>

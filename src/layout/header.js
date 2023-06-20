@@ -11,6 +11,7 @@ const Wrapper = styled.div`
         height: ${props.layout.headerHeightSize}px;
         z-index: 200;
         background-color: #beb9c8;
+        overflow-x: auto;
     `)}
 `
 
@@ -39,9 +40,7 @@ const Header = ({ layoutOptions }) => {
                     <Item>
                         <input type='text' placeholder='검색창'></input>
                     </Item>
-                    <Item>
-                        <CounterTestItem></CounterTestItem>
-                    </Item>
+                    
                 </FlexArea>
                 <FlexArea>
                     <Item>
